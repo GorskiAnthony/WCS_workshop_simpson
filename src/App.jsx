@@ -37,14 +37,22 @@ function App() {
 
 	return (
 		<div className="App">
-			{/* {familySimpson.map((member) => (
+			{/* 
+			{familySimpson.map((member) => (
 				<Avatar
 					key={member.id}
 					image={member.image}
 					firstName={member.firstName}
 					lastName={member.lastName}
 				/>
-			))} */}
+			))} 
+
+			familySimpson.map((member) => {
+				return (
+					<Avatar key={member.id} {...member} />
+				)
+			})*/}
+
 			{familySimpson.map((member) => (
 				<Avatar key={member.id} {...member} />
 			))}
